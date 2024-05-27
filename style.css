@@ -294,7 +294,7 @@ footer .nav1 .seperation {
 
 
 /* For screens smaller than 768px (typical smartphones) */
-@media screen  and (max-width:418px) {
+@media screen  and (max-width:410px) {
     header {
         /* padding: 12px; */
     }
