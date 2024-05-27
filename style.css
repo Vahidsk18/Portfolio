@@ -5,7 +5,7 @@
 
 header {
     background-color: rgb(9, 9, 99);
-    padding: 24px
+    padding: 24px;
 }
 
 nav ul .portline {
@@ -218,7 +218,7 @@ footer .nav1 .seperation {
 
 .botsep {
     height: 4px;
-    width: 82vw;
+    width: 72vw;
     position: relative;
     top: 55vh;
     left: 114px;
@@ -294,7 +294,7 @@ footer .nav1 .seperation {
 
 
 /* For screens smaller than 768px (typical smartphones) */
-@media screen and (max-width: 430px) {
+@media screen  and (max-width:418px) {
     header {
         /* padding: 12px; */
     }
@@ -302,38 +302,44 @@ footer .nav1 .seperation {
     nav ul {
         gap: 9px;
         font-size: small;
+        position: relative;
+        left: 5vw;
     }
 
     nav ul .portline {
-        font-size: large;
+        font-size: 1.3rem;
         position: absolute;
-        left: 5px;
-        top: -2px;
+        color: #0edda6;
+        left: -19px;
+        top: -11px;
     }
 
     main {
-        /* height: auto; */
+        height: 70vh;
     }
 
     main .img img {
-        height: 181px;
-        width: 181px;
+        position: absolute;
+        height: 175px;
+        width: 190px;
+        top: 47vh;
+        /* right: 2vw; */
+        left: 17vh;
     }
 
     main .font {
-        width: 42vw;
+        width: 67vw;
         /* display: flex; */
         /* flex-direction: column; */
-        font-size: x-large;
+        font-size: 2rem;
         position: absolute;
-        left: 44px;
-        top: 112px;
+        left: 60px;
+        top: 86px;
     }
 
     main .font .purple {
-
         position: absolute;
-        left: 36vw;
+        left: 52vw;
     }
 
     main #element {
@@ -344,12 +350,13 @@ footer .nav1 .seperation {
     }
 
     footer {
-        height: 150vh;
+        height: 100vh;
         width: 100vw;
     }
 
     .nav1 .sep2 {
-        top: 33vh;
+        top: 25vh;
+        left: 3vw;
     }
 
     .line1 {
@@ -359,13 +366,13 @@ footer .nav1 .seperation {
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 43vh;
+        top: 30vh;
         left: 15vw;
     }
 
     .line1font h4 {
-        top: 51vh;
-        left: 22vh
+        top: 36vh;
+        left: 11vh;
     }
 
     .line2 {
@@ -375,13 +382,13 @@ footer .nav1 .seperation {
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 43vh;
+        top: 30vh;
         left: 33vw;
     }
 
     .line2font h4 {
-        top: 51vh;
-        left: 55vh;
+        top: 36vh;
+        left: 26vh;
     }
 
     .line3 {
@@ -391,13 +398,13 @@ footer .nav1 .seperation {
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 43vh;
+        top: 30vh;
         left: 58vw;
     }
 
     .line3font h4 {
-        top: 51vh;
-        left: 78vh;
+        top: 36vh;
+        left: 40vh
     }
 
     .line4 {
@@ -407,18 +414,19 @@ footer .nav1 .seperation {
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 43vh;
+        top: 30vh;
         left: 81vw;
     }
 
     .line4font h4 {
-        top: 51vh;
-        left: 114vh;
+        top: 36vh;
+        left: 59vh;
     }
 
     .footfont h1 {
-        left: 44vh;
-        top: 66vh;
+        position: absolute;
+        left: 20vh;
+        top: 46vh;
     }
 
     .botsep ul {
@@ -431,12 +439,12 @@ footer .nav1 .seperation {
         /* padding: 10px; */
         position: relative;
         right: 21vw;
-        top: 10vh;
+        top: 1vh;
     }
 
     #botfot .sepa2 {
-
-        top: 68vh;
+        top: 55vh;
+        left: 15vw;
     }
 
     .stulast {
