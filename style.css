@@ -60,6 +60,7 @@ main .img img {
     position: relative;
     left: 55vw;
     top: 50px;
+    background-position: center;
 
 }
 
@@ -92,13 +93,13 @@ main .font .purple {
 footer {
     background-color: rgb(2, 2, 41);
     height: 100vh;
-    /* position: absolute; */
-
+    position: absolute;
+    width: 99.1vw;
 
 }
 
 .nav1 {
-    position: absolute;
+    position: relative;
 
 }
 
@@ -120,8 +121,6 @@ footer .nav1 .seperation {
     background-color: #23208a;
     position: relative;
     top: 22vh;
-
-
 }
 
 .headfoot {
@@ -220,12 +219,20 @@ footer .nav1 .seperation {
 .botsep {
     height: 4px;
     width: 82vw;
-    /* max-width: 85vw; */
+    position: relative;
+    top: 55vh;
+    left: 114px;
+}
+
+.sepa2 {
+    height: 4px;
+    /* width: 60vw; */
+    max-width: 82vw;
     margin: auto;
     background-color: #23208a;
     position: relative;
     top: 55vh;
-    left: 114px;
+    left: 9vw;
 }
 
 .botsep ul {
@@ -252,7 +259,7 @@ footer .nav1 .seperation {
 .botsep ul li a {
     color: rgb(31, 171, 206);
     list-style: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 }
 
@@ -267,18 +274,183 @@ footer .nav1 .seperation {
     width: 12px;
     background-color: rgb(2, 2, 41);
 }
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(2, 2, 41);
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(53, 138, 150);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(64, 6, 156); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 6, 156);
+}
+
+
+
+/* For screens smaller than 768px (typical smartphones) */
+@media screen and (max-width: 430px) {
+    header {
+        /* padding: 12px; */
+    }
+
+    nav ul {
+        gap: 9px;
+        font-size: small;
+    }
+
+    nav ul .portline {
+        font-size: large;
+        position: absolute;
+        left: 5px;
+        top: -2px;
+    }
+
+    main {
+        /* height: auto; */
+    }
+
+    main .img img {
+        height: 181px;
+        width: 181px;
+    }
+
+    main .font {
+        width: 42vw;
+        /* display: flex; */
+        /* flex-direction: column; */
+        font-size: x-large;
+        position: absolute;
+        left: 44px;
+        top: 112px;
+    }
+
+    main .font .purple {
+
+        position: absolute;
+        left: 36vw;
+    }
+
+    main #element {
+        display: flex;
+        /* margin: 10px -3px; */
+        position: relative;
+        gap: 7px;
+    }
+
+    footer {
+        height: 150vh;
+        width: 100vw;
+    }
+
+    .nav1 .sep2 {
+        top: 33vh;
+    }
+
+    .line1 {
+        top: 39vh;
+        height: 5px;
+        width: 11vw;
+        transform: rotate(90deg);
+        background-color: #23208a;
+        position: absolute;
+        top: 43vh;
+        left: 15vw;
+    }
+
+    .line1font h4 {
+        top: 51vh;
+        left: 22vh
+    }
+
+    .line2 {
+        top: 39vh;
+        height: 5px;
+        width: 11vw;
+        transform: rotate(90deg);
+        background-color: #23208a;
+        position: absolute;
+        top: 43vh;
+        left: 33vw;
+    }
+
+    .line2font h4 {
+        top: 51vh;
+        left: 55vh;
+    }
+
+    .line3 {
+        top: 39vh;
+        height: 5px;
+        width: 11vw;
+        transform: rotate(90deg);
+        background-color: #23208a;
+        position: absolute;
+        top: 43vh;
+        left: 58vw;
+    }
+
+    .line3font h4 {
+        top: 51vh;
+        left: 78vh;
+    }
+
+    .line4 {
+        top: 39vh;
+        height: 5px;
+        width: 11vw;
+        transform: rotate(90deg);
+        background-color: #23208a;
+        position: absolute;
+        top: 43vh;
+        left: 81vw;
+    }
+
+    .line4font h4 {
+        top: 51vh;
+        left: 114vh;
+    }
+
+    .footfont h1 {
+        left: 44vh;
+        top: 66vh;
+    }
+
+    .botsep ul {
+        /* margin: 0px 46px; */
+        width: 72vw;
+
+    }
+
+    .botsep ul li {
+        /* padding: 10px; */
+        position: relative;
+        right: 21vw;
+        top: 10vh;
+    }
+
+    #botfot .sepa2 {
+
+        top: 68vh;
+    }
+
+    .stulast {
+
+        /* margin: 0 27px; */
+        /* position: relative;
+    right: 10vw; */
+    }
+
+    body {
+        /* width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;  */
+        /* overflow-x: hidden; */
+    }
+}
