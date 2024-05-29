@@ -5,12 +5,13 @@
 
 header {
     background-color: rgb(9, 9, 99);
-    padding: 24px;
+    padding: 19px;
 }
 
 nav ul .portline {
     position: absolute;
     left: 12vw;
+    top: -3vh;
     font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -24,6 +25,8 @@ nav ul {
     list-style: none;
     color: white;
     font-size: large;
+    margin: -12px;
+    top: -2vh;
 }
 
 nav ul li a {
@@ -56,11 +59,12 @@ main .img img {
     /* max-height: 74%; */
     width: 41vw;
     height: 84vh;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: multiply; */
     position: relative;
     left: 55vw;
     top: 50px;
     background-position: center;
+    border-radius: 100%;
 
 }
 
@@ -216,13 +220,7 @@ footer .nav1 .seperation {
     left: 11vw;
 }
 
-.botsep {
-    height: 4px;
-    width: 72vw;
-    position: relative;
-    top: 55vh;
-    left: 114px;
-}
+
 
 .sepa2 {
     height: 4px;
@@ -241,26 +239,29 @@ footer .nav1 .seperation {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 27px;
+    margin-top: 19px;
+    text-decoration: none;
+    list-style: none;
 
 
 }
 
-.botsep ul li {
+/* .botsep ul li {
     text-decoration: none;
     list-style: none;
     color: aqua;
-    position: relative;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    gap: 13px;
-}
+
+} */
 
 .botsep ul li a {
-    color: rgb(31, 171, 206);
+    color: #f15875;
     list-style: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
+    position: relative;
+    top: 60vh;
+    left: 33vw;
 }
 
 .botsep ul li a:hover {
@@ -291,55 +292,134 @@ footer .nav1 .seperation {
     background: rgb(64, 6, 156);
 }
 
+/* toogle drakmode */
+label {
+    width: 67px;
+    height: 26px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    top: -11px;
+}
+
+label:after {
+    content: "";
+    width: 44px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    left: 22px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked+label {
+    background: #242424;
+}
+
+input:checked+label:after {
+    left: 2.8vw;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label,
+label:after {
+    transition: 0.3s
+}
+
+label:active:after {
+    width: 100px;
+}
+
+
+
+
+
+
 
 
 /* For screens smaller than 768px (typical smartphones) */
-@media screen  and (max-width:410px) {
-    header {
-        /* padding: 12px; */
+@media screen and (max-width:420px) {
+    .toggle {
+        position: absolute;
+        top: 170vh;
+        z-index: 20;
     }
+    label {
+        width: 75px;
+        
 
+    }
+    label:after {
+        width: 51px;
+        height: 26px;
+    
+    }
+    input:checked+label:after {
+        left: 10.5vw;
+
+    }
+    header{
+        padding: 37px;
+    }
     nav ul {
         gap: 9px;
         font-size: small;
         position: relative;
-        left: 5vw;
+        left: 4vw;
+        top: 1vh;
     }
 
     nav ul .portline {
         font-size: 1.3rem;
         position: absolute;
         color: #0edda6;
-        left: -19px;
+        left: -30px;
         top: -11px;
     }
 
     main {
         height: 70vh;
+        /* background-color: white; */
     }
 
     main .img img {
         position: absolute;
-        height: 175px;
-        width: 190px;
-        top: 47vh;
+        height: 356px;
+        width: 356px;
+        top: 35vh;
         /* right: 2vw; */
-        left: 17vh;
+        left: 3vh;
+        border-radius: 200px;
     }
 
     main .font {
         width: 67vw;
         /* display: flex; */
         /* flex-direction: column; */
-        font-size: 2rem;
+        font-size: 2.6rem;
         position: absolute;
-        left: 60px;
+        left: 6.4vw;
         top: 86px;
     }
 
     main .font .purple {
         position: absolute;
-        left: 52vw;
+        left: 66vw;
+        font-size: 2.6rem;
     }
 
     main #element {
@@ -347,6 +427,7 @@ footer .nav1 .seperation {
         /* margin: 10px -3px; */
         position: relative;
         gap: 7px;
+        font-size: xx-large;
     }
 
     footer {
@@ -356,77 +437,75 @@ footer .nav1 .seperation {
 
     .nav1 .sep2 {
         top: 25vh;
-        left: 3vw;
+        left: 4vw;
     }
 
     .line1 {
-        top: 39vh;
+        top: 29vh;
+        width: 15vw;
         height: 5px;
-        width: 11vw;
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 30vh;
         left: 15vw;
     }
 
     .line1font h4 {
         top: 36vh;
-        left: 11vh;
+        left: 7vh;
     }
 
     .line2 {
-        top: 39vh;
+        top: 29vh;
+        width: 15vw;
         height: 5px;
-        width: 11vw;
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 30vh;
         left: 33vw;
     }
 
     .line2font h4 {
         top: 36vh;
-        left: 26vh;
+        left: 16.6vh;
     }
 
     .line3 {
-        top: 39vh;
+        top: 29vh;
+        width: 15vw;
         height: 5px;
-        width: 11vw;
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 30vh;
         left: 58vw;
     }
 
     .line3font h4 {
         top: 36vh;
-        left: 40vh
+        left: 25vh
     }
 
     .line4 {
-        top: 39vh;
+        top: 29vh;
+        width: 15vw;
         height: 5px;
-        width: 11vw;
         transform: rotate(90deg);
         background-color: #23208a;
         position: absolute;
-        top: 30vh;
         left: 81vw;
     }
 
     .line4font h4 {
         top: 36vh;
-        left: 59vh;
+        left: 38vh;
     }
 
     .footfont h1 {
-        position: absolute;
-        left: 20vh;
-        top: 46vh;
+        position: relative;
+        left: 12vh;
+        top: 53.6vh;
+        display: flex;
+
     }
 
     .botsep ul {
@@ -439,7 +518,7 @@ footer .nav1 .seperation {
         /* padding: 10px; */
         position: relative;
         right: 21vw;
-        top: 1vh;
+        top: -4vh;
     }
 
     #botfot .sepa2 {

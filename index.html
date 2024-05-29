@@ -10,29 +10,33 @@
 
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li class="portline">Vahid's Portfolio</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Contact Me</a></li>
+<body class="bod">
+    <header id="head">
+        <div class="toggle">
+        <input type="checkbox" id="darkmode-toggle"  />
+        <label for="darkmode-toggle">
+        </div>
+            <nav>
+                <ul>
+                    <li class="portline">Vahid's Portfolio</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact Me</a></li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
     </header>
-    <main>
+    <main class="mclass">
         <div class="img">
-            <img src="port.jpg" alt="">
+            <img src="port-removebg-preview.png" alt="">
         </div>
         <div class="font">
             Hi,My Name is <span class="purple">Vahid</span>and Iam passionate on
             <span id="element"></span>
         </div>
     </main>
-    <footer>
+    <footer class="twofoot">
         <div class="nav1">
             <div class="seperation">
             </div>
@@ -65,15 +69,15 @@
 
         <div id="botfot">
             <div class="footfont">
-                <h1>MY Projects</h1>
+                <h1 class="project">MY Projects</h1>
             </div>
             <div class="sepa2"></div>
-            <div class="botsep" >
+            <div class="botsep">
                 <ul>
-                    
-                    <li>&#128073;<a href="https://vahidsk18.github.io/Netflix/"   target="_blank" >Netflix Clone</a></li>
-                    <li>&#128073;<a href="https://vahidsk18.github.io/Portfolio/" target="_blank" >Portfolio</a></li>
-                    <li class="stulast">&#128073;<a href="https://vahidsk18.github.io/vskweb/"  target="_blank" >Student & Employee Login Page</a></li>
+                    <li><a href="https://vahidsk18.github.io/Netflix/" target="_blank" class="botse"><b>Netflix Clone</b></a></li>
+                    <li><a href="https://vahidsk18.github.io/Portfolio/" target="_blank" class="botse"><b>Portfolio</b></a></li>
+                    <li><a href="https://vahidsk18.github.io/vskweb/" target="_blank" class="botse"><b>Student & Employee Login Page</b></a>
+                    </li>
                     <p> </p>
                 </ul>
             </div>
@@ -84,15 +88,16 @@
     </footer>
 
 
-
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['<i>Web</i> development.'],
-            typeSpeed: 50,
+            strings: ['<i>Frontend</i> Development.', `<i>Backend</i> Development.`],
+            typeSpeed: 47,
         });
+
+
     </script>
 </body>
 
